@@ -10,7 +10,7 @@ hmd_on_action = {
 	#}
 	effect = {
 		log_hmd_playergamedata = yes
-		#hmd_effect = yes
+		hmd_effect = yes
 		hmd_end_effect = yes
 	}
 }
