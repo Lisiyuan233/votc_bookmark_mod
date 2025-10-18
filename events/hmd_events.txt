@@ -1,0 +1,14 @@
+hmd_event.1001 = {
+	type = character_event
+	title = "aha"
+	window = fullscreen_event
+	theme = clipboard_transfer_event_theme
+	desc = hmd_event.1001.desc
+	
+	widget = {
+        gui = "event_hmd_Clipboard"
+        container = "custom_widgets_container"
+    }
+	
+
+}

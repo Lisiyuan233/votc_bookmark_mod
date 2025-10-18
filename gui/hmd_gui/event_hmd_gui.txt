@@ -1,0 +1,16 @@
+hbox = {
+	name = "event_hmd_Clipboard"
+	layoutpolicy_horizontal = expanding
+	margin = { 10 0 }
+	
+	state = {
+        name = widget_show
+        trigger_on_create = yes
+		
+		on_start = "[EventWindowData.CopyToClipboard]"
+		
+	}
+	
+	expand = {}
+
+}
