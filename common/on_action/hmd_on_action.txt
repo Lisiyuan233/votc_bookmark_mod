@@ -1,16 +1,27 @@
-on_game_start = {
-	on_actions = {hmd_on_action}
+on_game_start_after_lobby = {
+	on_actions = {
+		hmd_on_action
+		hmd_clipboard_effects
+	}
 }
 hmd_on_action = {
 	#trigger = {			# On_actions can have triggers. If an on_action fires and its trigger returns false, nothing happens
 	#	trigger_conditions = yes
 	#}
-	events = {		# Events listed in "events" brackets will always fire as long as their trigger evaluates to true
-		hmd_event.1001
-	}
 	effect = {
 		log_hmd_playergamedata = yes
-		hmd_effect = yes
+		#hmd_effect = yes
 		hmd_end_effect = yes
+	}
+}
+
+hmd_clipboard_effects = {
+	effect = {
+		every_player = {
+			trigger_event = { 
+				id = hmd_event.9003
+				days = 1
+			}
+		}
 	}
 }

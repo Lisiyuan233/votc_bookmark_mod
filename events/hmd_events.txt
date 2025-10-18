@@ -1,14 +1,16 @@
-hmd_event.1001 = {
+namespace = hmd_event
+
+hmd_event.9003 = {
 	type = character_event
 	title = "aha"
-	window = fullscreen_event
-	theme = clipboard_transfer_event_theme
-	desc = hmd_event.1001.desc
-	
+	theme = realm
+	desc = hmd_event.9003.desc
 	widget = {
-        gui = "event_hmd_Clipboard"
+        gui = "event_window_widget_talk_clear"
         container = "custom_widgets_container"
     }
+}
+
+
 	
 
-}
